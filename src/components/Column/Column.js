@@ -3,7 +3,11 @@ import styles from './Column.scss';
 import PropTypes from 'prop-types';
 
 class Column extends React.Component{
-
+    static propTypes ={
+       wideo: PropTypes.string, 
+       animals: PropTypes.string,
+       cukierki: PropTypes.string,
+    }
     render(){
         return(
             <section className={styles.component}>
