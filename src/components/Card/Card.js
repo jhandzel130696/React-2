@@ -7,9 +7,10 @@ class Card extends React.Component{
       subtitle:PropTypes.string,
     }
     render(){
+      const {subtitle}= this.props;
       return(
         <section className={styles.component}>
-          {this.props.subtitle}
+          {subtitle}
         </section>
       );
     }
