@@ -11,18 +11,18 @@ class Column extends React.Component{
     static propTypes ={
       subtitle: PropTypes.string,
       cards: PropTypes.array,
-      titleOne: PropTypes.node,
+      title: PropTypes.node,
       icon: PropTypes.node,
        
     }
 
 
     render(){
-      const {icon,titleOne,cards}=this.props;
+      const {icon,title,cards}=this.props;
       return(
         <section className={styles.component}>
           <h3 className={styles.title}>
-            {titleOne}  
+            {title}  
             <span className={styles.icon}>
               <Icon name={icon}/>
             </span>
