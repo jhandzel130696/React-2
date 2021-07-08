@@ -7,7 +7,7 @@ class Card extends React.Component{
       title:PropTypes.string,
     }
     static defaultProps = {
-      icon: settings.defaultCardIcon,
+      icon: settings.defaultColumnIcon,
     }
     render(){
       const {title}= this.props;
